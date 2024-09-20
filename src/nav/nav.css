@@ -1,0 +1,62 @@
+#container {
+    display: inline-flex;
+    gap: 3px;
+     border: 1px solid black;
+     padding:5px 5px;
+     /* /box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+     margin-top: 1%;
+     margin-left: 5%;
+
+}
+
+/* General dropdown container */
+#dropdown {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Adjust the width based on your preference */
+    position: absolute;
+    z-index: 1000; /* Ensure it stays above other elements */
+    margin-left: 2%;
+}
+
+/* Unordered list inside the dropdown */
+#dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List items styling */
+#dropdown ul li {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Grouping and Ordering label */
+.grouping-section label {
+    margin-right: 10px;    
+}
+
+/* Styling for select dropdowns */
+#dropdown select {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px; /* Adjust width based on layout */
+}
+
+/* Optional: Hover effect on list items */
+#dropdown ul li:hover {
+    background-color: #f9f9f9;
+}
+
+/* Optional: Space between the dropdown elements */
+#dropdown ul li + li {
+    margin-top: 10px;
+}

@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+#displaybox #container {
+  display: inline-flex;
+  gap: 3px;
+   border: 1px solid black;
+   padding:5px 5px;
+   /* /box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+   margin-top: 1%;
+   margin-left: 5%;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* General dropdown container */
+#dropdown {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Adjust the width based on your preference */
+  position: absolute;
+  z-index: 1000; /* Ensure it stays above other elements */
+  margin-left: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Unordered list inside the dropdown */
+#dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* List items styling */
+#dropdown ul li {
+  padding: 10px 0;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Grouping and Ordering label */
+.grouping-section label {
+  margin-right: 10px;    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for select dropdowns */
+#dropdown select {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px; /* Adjust width based on layout */
+}
+
+/* Optional: Hover effect on list items */
+#dropdown ul li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Optional: Space between the dropdown elements */
+#dropdown ul li + li {
+  margin-top: 10px;
+}
+
+#content {
+  margin-top: 20px;
+  display: flex;
+  /* justify-content: space-around;  */
+  
+  margin-right: 10px;
+  margin-bottom: 10px;
+   /* flex-wrap: nowrap; */
+   overflow-x: auto;
+  padding-top: 10px;
+  box-sizing: border-box;
+  width:100%;
+  
+  
+} 
+#content {
+  background-color: rgb(213, 213, 213);
 }

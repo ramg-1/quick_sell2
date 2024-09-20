@@ -1,0 +1,27 @@
+#Section{
+    /* border:1px solid black; */
+    margin: 10px; /* Or padding if you prefer */
+    flex: 1; /* Optional: Makes components grow evenly */
+    min-width: 200px; /* Optional: Prevents shrinking below a certain size */
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    background-color: re10;
+    width: auto;
+        flex-grow: 1; /* Allow the section to grow */
+        flex-shrink: 1; /* Allow section to shrink */
+        flex-basis: auto; 
+}
+
+#top{
+    display: flex;
+    justify-content: space-around;
+}
+#top img{
+    width:15px;
+    height: 15px;
+    padding:0px 10px;
+}
+#count {
+    padding-left: 10px;
+}

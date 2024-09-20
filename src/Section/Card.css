@@ -1,0 +1,25 @@
+.card {
+    padding:20px;
+    width:250px;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+     background-color: white;
+    
+     margin-bottom:20px;
+}
+.card .statusimg {
+     border-radius: 50%;
+     padding-right: 5px;
+}
+.card .orderimg {
+    padding-right:5px;
+}
+.card .userimg{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.id-header{
+    display: flex;
+    justify-content: space-between;
+}
+
